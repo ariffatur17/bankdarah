@@ -8,4 +8,4 @@ app.get('/', function(req, res) {
  res.sendFile(path.join(view + "index.html"));
 });
 app.use('/', express.static(public));
-app.listen(80); 
+app.listen(PORT); 

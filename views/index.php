@@ -52,7 +52,7 @@
             </div>
         </header>
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <section class="page-section bg-danger" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -87,7 +87,7 @@
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Resque Darah</h3>
+                            <h3 class="h4 mb-2">Request Darah</h3>
                             <p class="text-muted mb-0">Description</p>
                         </div>
                     </div>
@@ -165,14 +165,16 @@
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <div class="row">
+                <h2 class="text-center mt-0">Form Service</h2>
+                <hr class="divider" />
+                <div class="row g-0">
                     <div class="col">
-                        <h2 class="mb-4">Form Donor</h2>
-                        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">DONOR!</a>
+                        <!-- <h2 class="mb-4">Form Resque</h2> -->
+                        <a class="btn btn-danger btn-xl" href="https://startbootstrap.com/theme/creative/">DONOR!</a>
                     </div>
                     <div class="col">
-                        <h2 class="mb-4">Form Resque</h2>
-                        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">RESQUE!</a>
+                        <!-- <h2 class="mb-4">Form Resque</h2> -->
+                        <a class="btn btn-danger btn-xl" href="https://startbootstrap.com/theme/creative/">RESQUE!</a>
                     </div>
                 </div>
             </div>

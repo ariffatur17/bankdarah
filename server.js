@@ -6,7 +6,7 @@ var public = __dirname + "/public/";
 const PORT = process.env.PORT || 3000;
 
 app.get('/', function(req, res) {
- res.sendFile(path.join(view + "index.php"));
+ res.sendFile(path.join(view + "index.html"));
 });
 app.use('/', express.static(public));
 app.listen(PORT, () => {

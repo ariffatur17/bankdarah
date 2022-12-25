@@ -7,11 +7,12 @@ var logger = require('morgan');
 
 var session = require('express-session');
 
-var indexRouter = require('./routes/index');
-var loginRouter = require('./routes/login');
-var signupRouter = require('./routes/signup');
+// var indexRouter = require('./routes/index');
+// var loginRouter = require('./routes/login');
+// var signupRouter = require('./routes/signup');
 
 var app = express();
+const bodyParser = require('body-parser');
 
 app.use(session({
   secret : 'webslesson',
@@ -28,10 +29,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
-app.use('/login', loginRouter);
-app.use('/signup', signupRouter);
+app.use('/', require('./routes/index.js'));
+// app.use('/login', loginRouter);
+// app.use('/signup', signupRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -48,6 +50,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 //app.listen(PORT, () => {
 //    console.log(`Our app is running on port ${ PORT }`);

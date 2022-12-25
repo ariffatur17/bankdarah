@@ -9,6 +9,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', session : req.session });
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Express', session : req.session });
+});
+
+router.get('/signup', function(req, res, next) {
+  res.render('signup', { title: 'Express', session : req.session });
+});
+
 router.post('/login', function(request, response, next){
   var user_email_address = request.body.user_email_address;
 

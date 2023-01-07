@@ -6,8 +6,7 @@ const authController = require('../controllers/auth.js');
 var db = require('../database');
 
 /* GET home page. */
-router.get('/', authController(req, res, next) {
-  if (req)
+router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', session : req.session });
 });
 

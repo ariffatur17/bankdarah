@@ -8,7 +8,7 @@
 
 
 .login-page {
-  width: 360px;
+  width: 500px;
   padding: 8% 0 0;
   margin: auto;
 
@@ -17,9 +17,9 @@
   position: relative;
   z-index: 1;
   background: #DC3115;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
+  max-width: 500px;
+  margin: auto auto 100px;
+  padding: 50px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   
@@ -28,14 +28,24 @@
   font-family: FontAwesome, "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
-  width: 100%;
+  width: 47%;
   border: 0;
-  margin: 0 0 15px;
+  margin: 0 3px 15px;
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
-border-radius:10px;
+  border-radius:10px;
+  float: left;
   
+}
+
+.form input#username{
+  width: 95%;
+  text-align: center;
+}
+.form input#date{
+  width: 95%;
+  text-align: center;
 }
 .form button {
   font-family: "Titillium Web", sans-serif;

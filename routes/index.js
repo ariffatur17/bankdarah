@@ -18,8 +18,12 @@ router.get('/register', function(req, res, next) {
   res.render('register', { title: 'Express', session : req.session });
 });
 
-router.get('/profile', function(req, res, next) {
-  res.render('profile', { title: 'Express', session : req.session });
+router.get('/donor', function(req, res, next) {
+  res.render('donor', { title: 'Express', session : req.session });
+});
+
+router.get('/request', function(req, res, next) {
+  res.render('request', { title: 'Express', session : req.session });
 });
 
 module.exports = router;

@@ -5,12 +5,12 @@ const dotenv = require('dotenv');
 
 dotenv.config({path: '../env'});
 
-const db = mysql.createConnection({
-    host : 'localhost',
-    database : 'auth_db',
-    user : 'root',
-    password : ''
-});
+// const db = mysql.createConnection({
+//     host : 'localhost',
+//     database : 'auth_db',
+//     user : 'root',
+//     password : ''
+// });
 
 // exports.register = (req, res) => {
 //     console.log(req.body);
